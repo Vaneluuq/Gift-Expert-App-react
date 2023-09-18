@@ -2,13 +2,22 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Configuracion test
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm install jest babel-jest @babel/preset-env @babel/preset-react --save-dev
+npm install @testing-library/react @types/jest jest-environment-jsdom --save-dev
+npm install whatwg-fetch --save-dev
 
+Referencia (Vite):
 
-Recomendaciones estructura archivos 
+https://gist.github.com/Klerith/ca7e57fae3c9ab92ad08baadc6c26177
 
-- https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
-- https://es.legacy.reactjs.org/docs/faq-structure.html
+No olvidar: 
+
+- Error decribe:  "jest/globals": true en el archivo .eslintrc.cjs
+
+Recomendaciones test:
+
+1. trazar ruta critica: es decir cuales son los componentes necesarios a testear minimos para poder sacar el desarrollo a produccion
+2. Testear desde los componentes mas pequeños 
+
